@@ -1,0 +1,5 @@
+<%= form_for([@category, @category.words.build]) do |f| %>
+  <%= f.text_field :title, placeholder: "Word" %>
+  <%= f.text_field :meaning, placeholder: "Meaning" %>
+  <%= f.submit %>
+<% end %>
